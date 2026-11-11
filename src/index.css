@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Extra colors and fonts from the design */
+@theme {
+  --color-ocean-dark: #06485f; /* darker ocean for gradients */
+  --color-sos-text: #b91c1c; /* red text on light backgrounds */
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Arabic", system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+}
+
+/* Light theme */
+@plugin "daisyui/theme" {
+  name: "harbor";
+  default: true;
+  color-scheme: light;
+
+  --color-base-100: #fffbef; /* page and cards (paper) */
+  --color-base-200: #e5f2f3; /* soft panels (sky at about 25%) */
+  --color-base-300: #dce6e1; /* borders (deep ocean at about 14%) */
+  --color-base-content: #062e42; /* body text (ink) */
+
+  --color-primary: #086288; /* Deep Ocean */
+  --color-primary-content: #ffefc4; /* text on primary */
+  --color-secondary: #4d8dba; /* Marine Blue */
+  --color-secondary-content: #062e42;
+  --color-accent: #97d7ff; /* Sky Blue */
+  --color-accent-content: #062e42;
+  --color-neutral: #062e42;
+  --color-neutral-content: #ffefc4;
+
+  --color-info: #4d8dba;
+  --color-info-content: #062e42;
+  --color-success: #086288;
+  --color-success-content: #ffefc4;
+  --color-warning: #ffefc4; /* Soft Sand */
+  --color-warning-content: #062e42;
+  --color-error: #ef4444; /* SOS only */
+  --color-error-content: #ffffff;
+}
+
+/* Dark theme (my own extension, not in the design) */
+@plugin "daisyui/theme" {
+  name: "harbor-dark";
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: #062e42;
+  --color-base-200: #05283a;
+  --color-base-300: #041f2d;
+  --color-base-content: #ffefc4;
+
+  --color-primary: #97d7ff;
+  --color-primary-content: #062e42;
+  --color-secondary: #4d8dba;
+  --color-secondary-content: #062e42;
+  --color-accent: #ffefc4;
+  --color-accent-content: #062e42;
+  --color-neutral: #0a4a66;
+  --color-neutral-content: #ffefc4;
+
+  --color-info: #4d8dba;
+  --color-info-content: #062e42;
+  --color-success: #97d7ff;
+  --color-success-content: #062e42;
+  --color-warning: #ffefc4;
+  --color-warning-content: #062e42;
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+}
